@@ -30,16 +30,16 @@ body {
 @keyframes animate {
   0%,
   100% {
-    background-image: url(/img/1.JPG);
+    background-image: url(./img/1.JPG);
   }
   25% {
-    background-image: url(/img/2.JPG);
+    background-image: url(./img/2.JPG);
   }
   50% {
-    background-image: url(/img/3.JPG);
+    background-image: url(./img/3.JPG);
   }
   75% {
-    background-image: url(/img/4.JPG);
+    background-image: url(./img/4.JPG);
   }
 }
 
