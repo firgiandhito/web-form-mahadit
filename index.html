@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <link href="./css/styles.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran Ma'had IT An'amta</title>
+  </head>
+  <header>
+    <img src="/img/white-type.png" alt="logo_mahad_it" />
+    <h1 id="title">Formulir Pendaftaran Ma'had IT An'amta</h1>
+    <fieldset>
+      <p class="rules"><b>Petunjuk penggunaan formulir pendaftaran</b></p>
+      <ol>
+        <li>Isi semua data yang diperlukan</li>
+        <li>Isi data dengan sejujur-jujurnya</li>
+        <li>Setelah data terisi lengkap, tekan tombol 'kirim'</li>
+        <li>Anda akan diarahkan ke dalam aplikasi whatsapp / whatsapp web</li>
+        <li>
+          Jika anda mengisi formulir menggunakaan PC browser, izinkan laman
+          browser untuk membuka aplikasi whatsapp
+        </li>
+        <li>Tekan tombol kirim untuk mengirimkan pesan kepada musyrif</li>
+      </ol>
+    </fieldset>
+  </header>
+  <body>
+    <fieldset>
+      <h2>Data Pribadi</h2>
+      <form id="survey-form">
+        <label id="name-label"
+          >Nama<input
+            class="text-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Masukkan nama anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="email-label"
+          >E-mail<input
+            class="text-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan alamat e-mail anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="date-label"
+          >Tanggal lahir<input
+            class="text-input"
+            type="date"
+            id="date"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="address-label"
+          >Alamat lengkap<input
+            class="text-input"
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Masukkan alamat anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="number-label"
+          >Nomor telepon<input
+            class="text-input"
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="Masukkan no. telepon"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="name-label"
+          >Nama Bapak<input
+            class="text-input"
+            type="text"
+            id="father"
+            name="father"
+            placeholder="Masukkan nama bapak anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="number-label"
+          >Nomor telepon<input
+            class="text-input"
+            type="number"
+            id="parent-phone"
+            name="parent-phone"
+            placeholder="Masukkan no. telepon orang tua anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label>Beri keterangan</label>
+        <textarea
+          class="text-box"
+          type="text-box"
+          id="message"
+          placeholder="Isi keterangan..."
+        ></textarea>
+      </form>
+      <form id="survey-form">
+        <button
+          class="button btn btn-primary"
+          id="submit"
+          value="submit"
+          onclick="whatsapp();"
+        >
+          Kirim
+        </button>
+      </form>
+      <!-- <form id="survey-form">
+        <label
+          ><input
+            class="check"
+            type="checkbox"
+            name="prefer"
+            value="agree"
+            required
+          />
+          Dengan mengirim formulir ini, anda menyatakan setuju dengan
+          <a href="">Syarat & Ketentuan</a> yang berlaku</label
+        >
+        <label
+          ><input class="check" type="checkbox" name="prefer" value="agree" />
+          Kirim bukti pembuatan kartu melalui e-mail yang tertera</label
+        >
+      </form> -->
+    </fieldset>
+  </body>
+  <script src="https://webaxen.com/js/jquery3.6.min.js"></script>
+  <script src="https://webaxen.com/js/bootstrap.bundle.min.js"></script>
+  <script src="https://webaxen.com/js/owl.carousel.min.js"></script>
+  <script src="https://webaxen.com/js/script.js"></script>
+  <script>
+    function whatsapp() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var date = document.getElementById("date").value;
+      var address = document.getElementById("address").value;
+      var phone = document.getElementById("phone").value;
+      var father = document.getElementById("father").value;
+      var parentphone = document.getElementById("parent-phone").value;
+      var message = document.getElementById("message").value;
+
+      var url =
+        "https://wa.me/6285342894681?text=" +
+        "*Calon Santri Baru Ma'had IT* " +
+        "%0a" +
+        "%0a" +
+        "*Nama :* " +
+        name +
+        "%0a" +
+        "*Email :* " +
+        email +
+        "%0a" +
+        "*TTL :* " +
+        date +
+        "%0a" +
+        "*Alamat :* " +
+        address +
+        "%0a" +
+        "*No. Telp :* " +
+        phone +
+        "%0a" +
+        "*Nama Bapak :* " +
+        father +
+        "%0a" +
+        "*No. telepon ortu :* " +
+        parentphone +
+        "%0a" +
+        "*Pesan :* " +
+        message;
+
+      window.open(url, "_blank").focus();
+    }
+  </script>
+</html>

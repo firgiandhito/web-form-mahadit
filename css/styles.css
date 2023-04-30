@@ -1,0 +1,150 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  height: 100%;
+  max-width: 768px;
+  padding: 20px 50px 0 50px;
+  margin: auto;
+  animation: animate 40s ease-in-out infinite;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(/img/1.JPG);
+  }
+  25% {
+    background-image: url(/img/2.JPG);
+  }
+  50% {
+    background-image: url(/img/3.JPG);
+  }
+  75% {
+    background-image: url(/img/4.JPG);
+  }
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+
+#title {
+  color: rgb(225, 225, 225);
+}
+
+p {
+  font-style: italic;
+}
+
+input,
+textarea {
+  padding-left: 10px;
+}
+
+label,
+.text-input,
+select {
+  display: block;
+  width: 98%;
+  margin: 30 0 0 10;
+  border: none;
+}
+
+textarea {
+  margin-right: 10px;
+}
+
+.text-input {
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+  margin-left: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+#survey-form {
+  padding: 10px 0;
+}
+
+select {
+  height: 30px;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30 0 0 10;
+  padding: 0 22.5rem 0 22.5rem;
+  height: 30px;
+  width: 100%;
+  border: 0;
+  background-color: rgb(75, 75, 75);
+}
+
+.button:hover {
+  color: black;
+}
+
+.radio {
+  display: initial;
+  height: 15px;
+}
+
+.check {
+  font-size: 10px;
+}
+
+.text-box {
+  margin: 30 0 0 10;
+  width: 98%;
+  height: 100px;
+  font-size: 20px;
+}
+
+a:link {
+  color: rgb(75, 75, 75);
+}
+
+a:hover {
+  color: black;
+}
+
+fieldset {
+  position: relative;
+  width: 80%;
+  border: 0;
+  background-color: rgba(178, 178, 178, 0.7);
+  min-width: 768px;
+  margin-bottom: 60px;
+  border-radius: 8px;
+}
