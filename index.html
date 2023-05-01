@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-  <link href="./css/styles.css" rel="stylesheet" />
+  <link href="/css/styles.css" rel="stylesheet" />
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,10 @@
     <img src="/img/white-type.png" alt="logo_mahad_it" />
     <h1 id="title">Formulir Pendaftaran Ma'had IT An'amta</h1>
     <fieldset>
+      <!-- Petunjuk Penggunaan -->
       <p class="rules"><b>Petunjuk penggunaan formulir pendaftaran</b></p>
       <ol>
+        <li>Mulai dengan membaca Bismillah</li>
         <li>Isi semua data yang diperlukan</li>
         <li>Isi data dengan sejujur-jujurnya</li>
         <li>Setelah data terisi lengkap, tekan tombol 'kirim'</li>
@@ -22,10 +24,30 @@
         </li>
         <li>Tekan tombol kirim untuk mengirimkan pesan kepada musyrif</li>
       </ol>
+      <br />
+      <br />
+      <!-- Persyaratan Masuk -->
+      <p class="condition">
+        <b>Syarat pendaftaran Mahasantri Ma'had IT An'amta</b>
+      </p>
+      <ol>
+        <li>
+          Muslim taat beribadah (Shalat berjama'ah di masjid, rutin tilawah
+          Qur'an, dll)
+        </li>
+        <li>Lulusan Pesantren/Madrasah Aliyah (Maksimal 2 tahun lalu)</li>
+        <li>Tidak merokok atau mengkonsumsi alkohol</li>
+        <li>
+          Siap mengikuti peraturan Ma'had IT An'amta Syameela serta bersedia
+          menerima sanksi jika melanggar
+        </li>
+        <li>Lulus tes penerimaan & seleksi calon Mahasantri Baru</li>
+      </ol>
     </fieldset>
   </header>
   <body>
     <fieldset>
+      <!-- Bagian A -->
       <h2>Data Pribadi</h2>
       <form id="survey-form">
         <label id="name-label"
@@ -51,7 +73,7 @@
       </form>
       <form id="survey-form">
         <label id="date-label"
-          >Tanggal lahir<input
+          >Tanggal Lahir<input
             class="text-input"
             type="date"
             id="date"
@@ -60,7 +82,7 @@
       </form>
       <form id="survey-form">
         <label id="address-label"
-          >Alamat lengkap<input
+          >Alamat Lengkap<input
             class="text-input"
             type="text"
             id="address"
@@ -71,7 +93,7 @@
       </form>
       <form id="survey-form">
         <label id="number-label"
-          >Nomor telepon<input
+          >Nomor Telepon<input
             class="text-input"
             type="number"
             id="phone"
@@ -93,7 +115,7 @@
       </form>
       <form id="survey-form">
         <label id="number-label"
-          >Nomor telepon<input
+          >Nomor Telepon Orang Tua<input
             class="text-input"
             type="number"
             id="parent-phone"
@@ -102,15 +124,304 @@
             required
         /></label>
       </form>
+    </fieldset>
+    <fieldset>
+      <h2>Pendidikan Pendaftar</h2>
       <form id="survey-form">
-        <label>Beri keterangan</label>
-        <textarea
-          class="text-box"
-          type="text-box"
-          id="message"
-          placeholder="Isi keterangan..."
-        ></textarea>
+        <label id="education-label"
+          >Pendidikan terakhir<input
+            class="text-input"
+            type="text"
+            id="education"
+            name="education"
+            placeholder="Masukkan riwayat pendidikan terakhir anda"
+            required
+        /></label>
       </form>
+      <form id="survey-form">
+        <label id="past-school-label"
+          >Alamat Sekolah/Pesantren<input
+            class="text-input"
+            type="text"
+            id="past-school"
+            name="past-school"
+            placeholder="Masukkan Alamat Sekolah/Pesantren terakhir anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="education-label">
+          Nilai Mata Pelajaran terakhir:
+          <ul>
+            <li class="value-list">
+              Bahasa Arab
+              <input
+                class="text-input"
+                type="text"
+                id="arabic-value"
+                name="arabic-value"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </li>
+            <br />
+            <li class="value-list">
+              Bahasa Inggris
+              <input
+                class="text-input"
+                type="text"
+                id="english-value"
+                name="english-value"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </li>
+            <br />
+            <li class="value-list">
+              Matematika
+              <input
+                class="text-input"
+                type="text"
+                id="math-value"
+                name="math-value"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </li>
+            <br />
+            <li class="value-list">
+              Ilmu komputer/TIK
+              <input
+                class="text-input"
+                type="text"
+                id="it-value"
+                name="it-value"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </li>
+          </ul>
+        </label>
+      </form>
+      <form id="survey-form">
+        <label id="recitation-label"
+          >Berapa Juz Hafalan Al Quran Saat ini<input
+            class="text-input"
+            type="text"
+            id="recitation"
+            name="recitation"
+            placeholder="Masukkan jumlah hafalan anda"
+            required
+        /></label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2>Prestasi Pendaftar</h2>
+      <form id="survey-form">
+        <label id="achievement-label"
+          >Kelebihan apa yang dimiliki dari segi IT dan DKV?<input
+            class="text-input"
+            type="text"
+            id="achievement"
+            name="achievement"
+            placeholder="Masukkan kelebihan anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="superiority-label"
+          >Ceritakan dengan padat tapi singkat, tentang prestasi, kelebihan,
+          atau keahlian khusus yang antum miliki hingga kini, baik formal maupun
+          non-formal. ( misalnya: programming dengan bahasa tertentu, hafal 30
+          Juz, hafal hadits arba'in, kemampuan olahraga renang 100 m, berkuda,
+          memanah, bela diri, hiking, presentasi, lempar pisau, ngisi kajian,
+          beternak, bertani, membuat blog / web, aktivis dakwah, jurnalistik,
+          video editing, photoshop, website admin, administrasi kantor, relawan
+          bencana alam dll)
+          <textarea
+            class="text-box"
+            type="text-box"
+            id="superiority"
+            name="superiority"
+            placeholder="Isi keterangan..."
+          ></textarea>
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2>Hobby / Kegiatan Yang Disukai Pendaftar</h2>
+      <form id="survey-form">
+        <label id="hobby-label"
+          >Ceritakan dengan singkat, tentang kegiatan apa yang membuat antum
+          "enjoy" dan "menikmati" atau "betah berlama-lama" (misalnya : baca
+          buku, futsal/badminton/jogging, internet, komputer yg beda dengan
+          internet, ngulik software komputer, ngulik hardware komputer, bertani,
+          beternak, social media, dll)
+          <textarea
+            class="text-box"
+            type="text-box"
+            id="hobby"
+            name="hobby"
+            placeholder="Isi keterangan..."
+          ></textarea>
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2>Web Dan Sosial Media</h2>
+      <form id="survey-form">
+        <label id="blog-label"
+          >Apakah antum punya blog? Cantumkan alamat blog antum (dakwah, jualan,
+          cerita, dll)<input
+            class="text-input"
+            type="text"
+            id="blog"
+            name="blog"
+            placeholder="Masukkan blog anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="radio-label"
+          >Apakah antum pernah meng upload video ke Youtube?
+          <br />
+          <input
+            class="radio-input"
+            type="radio"
+            id="prefer"
+            name="prefer"
+            value="yes"
+            required
+          />Ya, Pernah
+          <br />
+          <input
+            class="radio-input"
+            type="radio"
+            id="prefer"
+            name="prefer"
+            value="no"
+            required
+          />Tidak
+        </label>
+      </form>
+      <form action="#" id="survey-form">
+        <label id="social-label">
+          Cantumkan Akun Sosial Media Antum:
+          <ul>
+            <li class="social-list">
+              Facebook
+              <input
+                class="text-input"
+                type="text"
+                id="facebook"
+                name="facebook"
+                placeholder="Masukkan akun anda"
+                required
+              />
+            </li>
+            <br />
+            <li class="social-list">
+              Instagram
+              <input
+                class="text-input"
+                type="text"
+                id="instagram"
+                name="instagram"
+                placeholder="Masukkan akun anda"
+                required
+              />
+            </li>
+            <br />
+            <li class="social-list">
+              Whatsapp
+              <input
+                class="text-input"
+                type="text"
+                id="whatsapp"
+                name="whatsapp"
+                placeholder="Masukkan nomer whatsapp anda"
+                required
+              />
+            </li>
+          </ul>
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2>Pengenalan Tokoh Dan Ulama</h2>
+      <form id="survey-form">
+        <label id="example-label"
+          >Jelaskan dengan padat tapi singkat : 1 (satu) tokoh/ulama Islam luar
+          negeri dan 2 (dua) tokoh/ulama Indonesia, baik yg sudah meninggal atau
+          masih hidup yang paling antum kagumi (selain nabi dan rasul),
+          ceritakan apa keistimewaannya, ceritakan apa yg antum ingin
+          teladani/tiru kemudian langkah-langkah apa yg diperlukan untuk
+          menirunya menurut antum<textarea
+            class="text-box"
+            type="text-box"
+            id="example"
+            name="example"
+            placeholder="Isi keterangan..."
+            required
+          ></textarea>
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2>Rekomendasi Ustadz / Pesantren / Yayasan</h2>
+      <form id="survey-form">
+        <label id="recommendation-label"
+          >Dari Siapa Anda Mengetahui Ma'had An'Amta Syameela?<input
+            class="text-input"
+            type="text"
+            id="recommendation"
+            name="recommendation"
+            placeholder="Masukkan jawaban anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="motivation-label"
+          >Apa Motivasi Masuk Ma'had An 'Amta Syameela?<input
+            class="text-input"
+            type="text"
+            id="motivation"
+            name="motivation"
+            placeholder="Masukkan jawaban anda"
+            required
+        /></label>
+      </form>
+      <form id="survey-form">
+        <label id="radio-label"
+          >Siap Untuk Mengikuti Ketentuan Yang Berlaku di Ma'had An 'Amta
+          Syameela?
+          <br />
+          <input
+            class="radio-input"
+            type="radio"
+            id="readiness"
+            name="readiness"
+            value="yes"
+            required
+          />Ya
+          <br />
+          <input
+            class="radio-input"
+            type="radio"
+            id="readiness"
+            name="readiness"
+            value="no"
+            required
+          />Tidak
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <p class="last-message">
+        Pendaftar yang telah mendaftar akan dihubungi melalui Email/ WhatsApp
+        untuk informasi selanjutnya. <br /><br />
+        Baarakallaah fiik
+      </p>
       <form id="survey-form">
         <button
           class="button btn btn-primary"
@@ -121,7 +432,7 @@
           Kirim
         </button>
       </form>
-      <!-- <form id="survey-form">
+      <form id="survey-form">
         <label
           ><input
             class="check"
@@ -133,58 +444,12 @@
           Dengan mengirim formulir ini, anda menyatakan setuju dengan
           <a href="">Syarat & Ketentuan</a> yang berlaku</label
         >
-        <label
-          ><input class="check" type="checkbox" name="prefer" value="agree" />
-          Kirim bukti pembuatan kartu melalui e-mail yang tertera</label
-        >
-      </form> -->
+      </form>
     </fieldset>
   </body>
-  <script src="https://webaxen.com/js/jquery3.6.min.js"></script>
+  <!-- <script src="https://webaxen.com/js/jquery3.6.min.js"></script>
   <script src="https://webaxen.com/js/bootstrap.bundle.min.js"></script>
   <script src="https://webaxen.com/js/owl.carousel.min.js"></script>
-  <script src="https://webaxen.com/js/script.js"></script>
-  <script>
-    function whatsapp() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var date = document.getElementById("date").value;
-      var address = document.getElementById("address").value;
-      var phone = document.getElementById("phone").value;
-      var father = document.getElementById("father").value;
-      var parentphone = document.getElementById("parent-phone").value;
-      var message = document.getElementById("message").value;
-
-      var url =
-        "https://wa.me/6285342894681?text=" +
-        "*Calon Santri Baru Ma'had IT* " +
-        "%0a" +
-        "%0a" +
-        "*Nama :* " +
-        name +
-        "%0a" +
-        "*Email :* " +
-        email +
-        "%0a" +
-        "*TTL :* " +
-        date +
-        "%0a" +
-        "*Alamat :* " +
-        address +
-        "%0a" +
-        "*No. Telp :* " +
-        phone +
-        "%0a" +
-        "*Nama Bapak :* " +
-        father +
-        "%0a" +
-        "*No. telepon ortu :* " +
-        parentphone +
-        "%0a" +
-        "*Pesan :* " +
-        message;
-
-      window.open(url, "_blank").focus();
-    }
-  </script>
+  <script src="https://webaxen.com/js/script.js"></script> -->
+  <script src="/js/script.js"></script>
 </html>
