@@ -19,12 +19,13 @@ body {
   font-weight: 400;
   color: rgb(49, 49, 49);
   height: 100%;
-  max-width: 768px;
+  min-width: 900px;
   padding: 20px 50px 0 50px;
   margin: auto;
   animation: animate 40s ease-in-out infinite;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 @keyframes animate {
@@ -41,6 +42,28 @@ body {
   75% {
     background-image: url(../img/4.JPG);
   }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20px 10px 0 10px;
+    font-size: 16px;
+  }
+
+  fieldset {
+    width: auto;
+  }
+}
+
+fieldset {
+  position: relative;
+  align-items: center;
+  margin: 0 auto 60px auto;
+  width: 80%;
+  border: 0;
+  background-color: rgba(178, 178, 178, 0.7);
+  min-width: 600px;
+  border-radius: 8px;
 }
 
 h1,
@@ -98,16 +121,6 @@ select {
   height: 30px;
   margin-left: 0px;
   font-size: 20px;
-}
-
-fieldset {
-  position: relative;
-  width: 80%;
-  border: 0;
-  background-color: rgba(178, 178, 178, 0.7);
-  min-width: 768px;
-  margin-bottom: 60px;
-  border-radius: 8px;
 }
 
 .radio {
