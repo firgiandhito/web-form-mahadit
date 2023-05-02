@@ -4,7 +4,7 @@
   font-family: "poppins", sans-serif;
 }
 
-img {
+.logo {
   display: block;
   margin: auto;
   height: 200px;
@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   color: rgb(49, 49, 49);
   height: 100%;
-  min-width: 900px;
+  min-width: 800px;
   padding: 20px 50px 0 50px;
   margin: auto;
   animation: animate 40s ease-in-out infinite;
@@ -44,20 +44,39 @@ body {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
   body {
-    padding: 20px 10px 0 10px;
-    font-size: 16px;
+    width: auto;
+    padding: 20px 0 0 0;
   }
 
   fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 0 auto 60px auto;
+  }
+
+  fieldset ol,
+  h2,
+  form {
+    display: block;
+    width: 98%;
+  }
+
+  .button {
     width: auto;
   }
 }
 
 fieldset {
   position: relative;
-  align-items: center;
   margin: 0 auto 60px auto;
   width: 80%;
   border: 0;
@@ -155,13 +174,14 @@ a:hover {
   font-size: 20px;
   font-weight: bold;
   margin: 30 0 0 10;
-  padding: 0 22.5rem 0 22.5rem;
+  padding: 0 20px 0 20px;
   height: 30px;
   width: 100%;
   border: 0;
+  border-radius: 8px;
   background-color: rgb(75, 75, 75);
 }
 
 .button:hover {
-  color: black;
+  background-color: rgb(100, 100, 100);
 }
