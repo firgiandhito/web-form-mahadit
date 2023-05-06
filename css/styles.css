@@ -17,31 +17,13 @@ body {
   position: relative;
   font-size: 20px;
   font-weight: 400;
-  color: rgb(49, 49, 49);
+  color: rgb(225, 225, 225);
   height: 100%;
   min-width: 800px;
   padding: 20px 50px 0 50px;
   margin: auto;
-  animation: animate 40s ease-in-out infinite;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    background-image: url(../img/1.JPG);
-  }
-  25% {
-    background-image: url(../img/2.JPG);
-  }
-  50% {
-    background-image: url(../img/3.JPG);
-  }
-  75% {
-    background-image: url(../img/4.JPG);
-  }
+  background-color: rgb(40, 40, 40);
 }
 
 @media only screen and (max-width: 800px) {
@@ -68,6 +50,7 @@ body {
   form {
     display: block;
     width: 98%;
+    margin-bottom: 20px;
   }
 
   .button {
@@ -80,7 +63,7 @@ fieldset {
   margin: 0 auto 60px auto;
   width: 80%;
   border: 0;
-  background-color: rgba(178, 178, 178, 0.7);
+  background-color: rgb(65, 65, 65);
   max-width: 768px;
   min-width: 600px;
   border-radius: 8px;
@@ -94,23 +77,20 @@ p {
   padding: 30px;
 }
 
-#title {
-  color: rgb(225, 225, 225);
-}
-
 p {
   font-style: italic;
 }
 
 input,
 textarea {
+  color: rgb(225, 225, 225);
+  margin-top: 10px;
   padding-left: 10px;
   border-radius: 8px;
 }
 
 label,
-.text-input,
-select {
+.text-input {
   display: block;
   width: 98%;
   margin: 30 0 0 10;
@@ -118,6 +98,7 @@ select {
 }
 
 .text-input {
+  background-color: rgb(40, 40, 40);
   font-size: 20px;
   height: 30px;
   width: 100%;
@@ -137,12 +118,6 @@ ul {
   list-style-type: none;
 }
 
-select {
-  height: 30px;
-  margin-left: 0px;
-  font-size: 20px;
-}
-
 .radio {
   display: initial;
   height: 15px;
@@ -153,6 +128,7 @@ select {
 }
 
 .text-box {
+  background-color: rgb(40, 40, 40);
   border: none;
   margin: 30 0 0 0;
   width: 100%;
@@ -170,7 +146,6 @@ a:hover {
 
 .button {
   display: inline-block;
-  color: white;
   font-size: 20px;
   font-weight: bold;
   margin: 30 0 0 10;
