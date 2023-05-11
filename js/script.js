@@ -90,6 +90,8 @@ function whatsapp() {
     "%0a" +
     "*Hobby :* " +
     "%0a" +
+    hobby +
+    "%0a" +
     "%0a" +
     "*WEB DAN SOSMED*" +
     "%0a" +

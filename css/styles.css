@@ -136,12 +136,12 @@ ul {
   font-size: 20px;
 }
 
-a:link {
-  color: rgb(75, 75, 75);
+a {
+  color: rgb(225, 225, 225);
 }
 
 a:hover {
-  color: black;
+  color: rgb(40, 40, 40);
 }
 
 .button {
@@ -154,6 +154,7 @@ a:hover {
   width: 100%;
   border: 0;
   border-radius: 8px;
+  color: rgb(225, 225, 225);
   background-color: rgb(75, 75, 75);
 }
 
